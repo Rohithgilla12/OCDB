@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div>
       <Head>
         <title>One click Database</title>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <Provider store={store}>
         <ChakraProvider resetCSS theme={theme}>
