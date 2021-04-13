@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-
+import Head from "next/head";
 import theme from "../theme";
 import { AppProps } from "next/app";
 import { Provider } from "react-redux";
@@ -7,11 +7,16 @@ import { store } from "../store/config";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Provider store={store}>
-      <ChakraProvider resetCSS theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </Provider>
+    <div>
+      <Head>
+        <title>One click Database</title>
+      </Head>
+      <Provider store={store}>
+        <ChakraProvider resetCSS theme={theme}>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </Provider>
+    </div>
   );
 }
 

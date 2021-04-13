@@ -1,4 +1,5 @@
 import firebase from "firebase";
+import splitbee from '@splitbee/web';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -24,3 +25,5 @@ export const firestore = firebase.firestore();
 export const auth = firebase.auth();
 
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+splitbee.init();
