@@ -120,6 +120,46 @@ export const Landing = () => {
             style={{ width: "1px", minWidth: "100%" }}
           />
         </Box>
+        <Text fontWeight="semibold" textAlign="center" fontSize="3xl">
+          Support the developement ❤️
+        </Text>
+        <SimpleGrid columns={{ sm: 2, md: 2 }} my={8} p={8}>
+          <Box>
+            <a href="https://ko-fi.com/C0C042WW1" target="_blank">
+              <img
+                style={{ height: "60px !important" }}
+                src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2"
+                alt="Buy Me a Coffee at ko-fi.com"
+              />
+            </a>
+          </Box>
+          <Box>
+            <a href="https://www.buymeacoffee.com/rohithgilla" target="_blank">
+              <img
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                alt="Buy Me A Coffee"
+                style={{ height: "60px !important" }}
+              />
+            </a>
+          </Box>
+        </SimpleGrid>
+        <blockquote className="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Woo a cool update{" "}
+            <a href="https://t.co/wsRDrBcdnA">https://t.co/wsRDrBcdnA</a> is now
+            Open Source ❤️
+            <br />
+            You can check it over here{" "}
+            <a href="https://t.co/6DdqddqSTU">https://t.co/6DdqddqSTU</a>
+            <br />
+            <br />
+            Feel free to leave a start ⭐️
+          </p>
+          &mdash; Rohith Gilla (@gillarohith){" "}
+          <a href="https://twitter.com/gillarohith/status/1375896269248364545?ref_src=twsrc%5Etfw">
+            March 27, 2021
+          </a>
+        </blockquote>
       </SimpleGrid>
     </Container>
   );
